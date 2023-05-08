@@ -18,7 +18,9 @@
     #{list items:todolist, as:'todo'}
     <tr>
       <td> ${todo.title} </td>
-      #{/list}
+      <td> <a href="/dashboard/deletetodo/${todo.id} " class="button is-danger"> Delete </a> </td>
+    </tr>
+    #{/list}
     </tbody>
   </table>
 
